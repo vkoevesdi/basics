@@ -43,15 +43,12 @@ public class Bild {
 
 
         public double umrechnung() {
-
         DecimalFormat df1 = new DecimalFormat("#.00");
         return getZoll() * 2.54;
         }
 
         public String toString(){
-        return "Das Bild hat die Farbe " + this.farbe + " und eine Diagonale von " + this.zoll + " Zoll (" + this.umrechnung() + " in cm)";
+        return "Das Bild hat die Farbe " + getFarbe() + " und eine Diagonale von " + getZoll() + " Zoll (" + umrechnung() + " in cm)";
         }
 
-
     }
-
